@@ -1,0 +1,12 @@
+release/Users.o
+release/doctorregister.o
+release/main.o
+release/mainwindow.o
+release/nurseregister.o
+release/patientregister.o
+release/registerwindow.o
+release/moc_doctorregister.o
+release/moc_mainwindow.o
+release/moc_nurseregister.o
+release/moc_patientregister.o
+release/moc_registerwindow.o

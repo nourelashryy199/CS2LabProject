@@ -18,6 +18,7 @@ public:
     ~MainWindow();
 
 private:
-    Ui::MainWindow *ui;
+    QMainWindow *ui;
 };
+
 #endif // MAINWINDOW_H
