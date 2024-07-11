@@ -43,7 +43,7 @@ public:
     {
         if (nurseregister->objectName().isEmpty())
             nurseregister->setObjectName("nurseregister");
-        nurseregister->resize(617, 720);
+        nurseregister->resize(617, 526);
         label_8 = new QLabel(nurseregister);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(120, 50, 331, 51));

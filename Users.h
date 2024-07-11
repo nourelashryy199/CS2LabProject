@@ -22,16 +22,22 @@ struct Nurse {
 
 struct Patient {
     QString name;
-    int age;
+    QString age;
+    QString gender;
     QString id;
     QString password;
     QString bloodtype;
-    double weight;
+    QString weight;
+    QString height;
     QString diet;
 };
 
 extern Doctor ourDoctors[100];
 extern Nurse ourNurses[100];
 extern Patient ourPatients[100];
+
+extern int doctorsCount;
+extern int nursesCount;
+extern int patientsCount;
 
 #endif // USERS_H

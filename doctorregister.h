@@ -15,6 +15,9 @@ public:
     explicit doctorRegister(QWidget *parent = nullptr);
     ~doctorRegister();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::doctorRegister *ui;
 };

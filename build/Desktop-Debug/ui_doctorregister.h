@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -30,7 +31,6 @@ public:
     QLineEdit *nameEdit;
     QLineEdit *idEdit;
     QLineEdit *passwordEdit;
-    QLineEdit *specEdit;
     QLineEdit *assistantEdit;
     QLabel *errorExisting;
     QLabel *label_8;
@@ -40,12 +40,13 @@ public:
     QLabel *LabelPassRe;
     QLineEdit *repassEdit;
     QLabel *LabelPassError;
+    QComboBox *comboBox;
 
     void setupUi(QDialog *doctorRegister)
     {
         if (doctorRegister->objectName().isEmpty())
             doctorRegister->setObjectName("doctorRegister");
-        doctorRegister->resize(627, 715);
+        doctorRegister->resize(627, 596);
         label = new QLabel(doctorRegister);
         label->setObjectName("label");
         label->setGeometry(QRect(80, 130, 61, 51));
@@ -89,9 +90,6 @@ public:
         passwordEdit = new QLineEdit(doctorRegister);
         passwordEdit->setObjectName("passwordEdit");
         passwordEdit->setGeometry(QRect(210, 260, 201, 41));
-        specEdit = new QLineEdit(doctorRegister);
-        specEdit->setObjectName("specEdit");
-        specEdit->setGeometry(QRect(210, 380, 201, 41));
         assistantEdit = new QLineEdit(doctorRegister);
         assistantEdit->setObjectName("assistantEdit");
         assistantEdit->setGeometry(QRect(210, 440, 201, 41));
@@ -109,11 +107,11 @@ public:
 "}"));
         pushButton = new QPushButton(doctorRegister);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(90, 498, 131, 71));
+        pushButton->setGeometry(QRect(140, 498, 131, 71));
         pushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
         errorCheck = new QLabel(doctorRegister);
         errorCheck->setObjectName("errorCheck");
-        errorCheck->setGeometry(QRect(260, 510, 161, 51));
+        errorCheck->setGeometry(QRect(310, 510, 161, 51));
         errorCheck->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
@@ -133,6 +131,20 @@ public:
         LabelPassError = new QLabel(doctorRegister);
         LabelPassError->setObjectName("LabelPassError");
         LabelPassError->setGeometry(QRect(420, 320, 191, 41));
+        comboBox = new QComboBox(doctorRegister);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName("comboBox");
+        comboBox->setGeometry(QRect(209, 385, 201, 41));
 
         retranslateUi(doctorRegister);
 
@@ -155,6 +167,18 @@ public:
         errorID->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" color:#aa0000;\">ERROR: ID IS NOT STARTING WITH 01</span></p></body></html>", nullptr));
         LabelPassRe->setText(QCoreApplication::translate("doctorRegister", "Re-type Password:", nullptr));
         LabelPassError->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" color:#aa0000;\">*Password Does Not Match</span></p></body></html>", nullptr));
+        comboBox->setItemText(0, QCoreApplication::translate("doctorRegister", "Select Field", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("doctorRegister", "Cardiologist", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("doctorRegister", "Dermatologist", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("doctorRegister", "General Surgeon", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("doctorRegister", "Neurologists", nullptr));
+        comboBox->setItemText(5, QCoreApplication::translate("doctorRegister", "Pediatrician", nullptr));
+        comboBox->setItemText(6, QCoreApplication::translate("doctorRegister", "Psychiatrist", nullptr));
+        comboBox->setItemText(7, QCoreApplication::translate("doctorRegister", "Optometrist", nullptr));
+        comboBox->setItemText(8, QCoreApplication::translate("doctorRegister", "Dentist", nullptr));
+        comboBox->setItemText(9, QCoreApplication::translate("doctorRegister", "Orthopedist", nullptr));
+        comboBox->setItemText(10, QCoreApplication::translate("doctorRegister", "Dietitian", nullptr));
+
     } // retranslateUi
 
 };

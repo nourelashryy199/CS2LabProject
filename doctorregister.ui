@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>627</width>
-    <height>715</height>
+    <height>596</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -149,16 +149,6 @@ font-size:15px
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="specEdit">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
-     <y>380</y>
-     <width>201</width>
-     <height>41</height>
-    </rect>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="assistantEdit">
    <property name="geometry">
     <rect>
@@ -208,7 +198,7 @@ font-size:15px
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>90</x>
+     <x>140</x>
      <y>498</y>
      <width>131</width>
      <height>71</height>
@@ -224,7 +214,7 @@ font-size:15px
   <widget class="QLabel" name="errorCheck">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>310</x>
      <y>510</y>
      <width>161</width>
      <height>51</height>
@@ -295,6 +285,71 @@ font-size:15px
    <property name="text">
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;*Password Does Not Match&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>209</x>
+     <y>385</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Select Field</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Cardiologist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dermatologist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>General Surgeon</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Neurologists</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Pediatrician</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Psychiatrist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Optometrist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dentist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Orthopedist</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Dietitian</string>
+    </property>
+   </item>
   </widget>
  </widget>
  <resources/>

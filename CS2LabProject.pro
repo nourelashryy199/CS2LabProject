@@ -11,8 +11,8 @@ CONFIG += c++17
 SOURCES += \
     Users.cpp \
     doctorregister.cpp \
+    loginwindow.cpp \
     main.cpp \
-    mainwindow.cpp \
     nurseregister.cpp \
     patientregister.cpp \
     registerwindow.cpp
@@ -20,14 +20,14 @@ SOURCES += \
 HEADERS += \
     Users.h \
     doctorregister.h \
-    mainwindow.h \
+    loginwindow.h \
     nurseregister.h \
     patientregister.h \
     registerwindow.h
 
 FORMS += \
     doctorregister.ui \
-    mainwindow.ui \
+    loginwindow.ui \
     nurseregister.ui \
     patientregister.ui \
     registerwindow.ui
