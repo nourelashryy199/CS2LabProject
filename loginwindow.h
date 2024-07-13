@@ -2,6 +2,7 @@
 #define LOGINWINDOW_H
 
 #include <QDialog>
+#include "doctormainwindow.h" // Include DoctorMainWindow header
 
 namespace Ui {
 class loginWindow;
@@ -17,6 +18,7 @@ public:
 
 private slots:
     void on_pushButton_register_clicked();
+    void on_LoginpushButton_clicked();
 
 private:
     Ui::loginWindow *ui;

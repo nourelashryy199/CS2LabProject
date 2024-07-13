@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DocCreateMedRecord</class>
+ <widget class="QDialog" name="DocCreateMedRecord">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1169</width>
+    <height>590</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="Sec1MedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>271</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic;&quot;&gt;Section I: Patient Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NameMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>67</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Full Name: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="DOFMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>83</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Date of Birth: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="GenderMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>48</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gender:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="PhoneNoMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>93</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Phone Number:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="EmergencyNoMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>190</y>
+     <width>173</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Emergency Contact Number:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="MedRecMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>152</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Medical Record Number: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Sec2MedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>250</y>
+     <width>291</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700; font-style:italic;&quot;&gt;Section II: Medical History&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ConditionMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>320</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Past Conditions: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="SurgMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>400</y>
+     <width>127</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Surgical Procedures: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="AllergiesMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>56</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Allergies:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="FamHistMedReclabel">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>540</y>
+     <width>92</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Family History: </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NextMedRecpushButton">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>540</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="NameMedReclineEdit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>60</y>
+     <width>881</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="PhoneNoMedReclineEdit">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>160</y>
+     <width>871</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="EmergencyNoMedReclineEdit">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>190</y>
+     <width>791</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="MedRecMedReclineEdit">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>220</y>
+     <width>811</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="DOFMedRecdateEdit">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>90</y>
+     <width>110</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>120</y>
+     <width>103</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>--</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Male</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Female</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QPlainTextEdit" name="ConditionMedRecplainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>310</y>
+     <width>871</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="SurgMedRecplainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>390</y>
+     <width>871</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="AllergiesMedRecplainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>460</y>
+     <width>871</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="FamHistMedRecplainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>530</y>
+     <width>871</width>
+     <height>51</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

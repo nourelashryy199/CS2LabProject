@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DocAppt</class>
+ <widget class="QDialog" name="DocAppt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1194</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="ApptWelcomelabel">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Your Appointment Scheduling Window</string>
+   </property>
+  </widget>
+  <widget class="QCalendarWidget" name="ApptSelectionDOCcalendarWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>170</y>
+     <width>491</width>
+     <height>381</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ApptSelectionlabel">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>100</y>
+     <width>301</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Select a time slot for your next clinic appointment: </string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="ApptDOCgroupBox">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>190</y>
+     <width>361</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Confirm your Appointment</string>
+   </property>
+   <widget class="QLabel" name="ApptDOCpatientlabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Patient's Full Name: </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ApptDOCpatientlineEdit">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>50</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTimeEdit" name="ApptDOCpatienttimeEdit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
+      <width>118</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ApptDOCtimelabel">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>171</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Time of day: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ApptDOCconfpushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>230</y>
+      <width>100</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Confirm</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

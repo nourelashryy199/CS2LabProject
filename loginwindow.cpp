@@ -1,6 +1,9 @@
 #include "loginwindow.h"
 #include "ui_loginwindow.h"
 #include "registerwindow.h"
+#include "doctormainwindow.h"
+#include "Users.h"
+#include <QDebug>
 
 loginWindow::loginWindow(QWidget *parent)
     : QDialog(parent)
@@ -8,6 +11,7 @@ loginWindow::loginWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->label_error->setVisible(false);
+    initializeUsersData();
 }
 
 loginWindow::~loginWindow()
@@ -22,3 +26,31 @@ void loginWindow::on_pushButton_register_clicked()
     registerWindow->show();
 }
 
+void loginWindow::on_LoginpushButton_clicked()
+{
+    QString id = ui->IDlineEdit->text();
+    QString password = ui->PasswordlineEdit->text();
+
+    qDebug() << "Entered ID:" << id;
+    qDebug() << "Entered Password:" << password;
+
+    bool loginSuccessful = false;
+
+
+    for (int i = 0; i < doctorsCount; ++i) {
+        qDebug() << "Checking against Doctor ID:" << ourDoctors[i].id << "Password:" << ourDoctors[i].password;
+        if (ourDoctors[i].id == id && ourDoctors[i].password == password) {
+            loginSuccessful = true;
+            qDebug() << "Login successful for Doctor:" << ourDoctors[i].name;
+            hide();
+            DoctorMainWindow* doctorMainWindow = new DoctorMainWindow(this);
+            doctorMainWindow->show();
+            break;
+        }
+    }
+
+    if (!loginSuccessful) {
+        ui->label_error->setVisible(true);
+        ui->label_error->setText("Invalid ID or Password");
+    }
+}

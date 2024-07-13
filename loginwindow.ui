@@ -29,7 +29,7 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="IDLoginlabel">
    <property name="geometry">
     <rect>
      <x>120</x>
@@ -42,7 +42,7 @@
     <string>ID</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_3">
+  <widget class="QLabel" name="Passwordlabel">
    <property name="geometry">
     <rect>
      <x>100</x>
@@ -68,7 +68,7 @@
     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#aa0000;&quot;&gt;ERROR: Wrong Username Or Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_id">
+  <widget class="QLineEdit" name="IDlineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -78,7 +78,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_password">
+  <widget class="QLineEdit" name="PasswordlineEdit">
    <property name="geometry">
     <rect>
      <x>180</x>
@@ -88,7 +88,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_login">
+  <widget class="QPushButton" name="LoginpushButton">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -104,7 +104,7 @@
     <string>Login</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_register">
+  <widget class="QPushButton" name="RegisterpushButton">
    <property name="geometry">
     <rect>
      <x>290</x>

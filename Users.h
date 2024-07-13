@@ -40,4 +40,6 @@ extern int doctorsCount;
 extern int nursesCount;
 extern int patientsCount;
 
+void initializeUsersData();  // Add this line
+
 #endif // USERS_H

@@ -10,25 +10,49 @@ CONFIG += c++17
 
 SOURCES += \
     Users.cpp \
+    admin.cpp \
+    docappt.cpp \
+    doccreatemedrecord.cpp \
+    doccreatemedrecord2.cpp \
+    doctormainwindow.cpp \
     doctorregister.cpp \
+    hopitalmainpage.cpp \
     loginwindow.cpp \
     main.cpp \
+    nursemainpage.cpp \
     nurseregister.cpp \
+    patientmainpage.cpp \
     patientregister.cpp \
     registerwindow.cpp
 
 HEADERS += \
     Users.h \
+    admin.h \
+    docappt.h \
+    doccreatemedrecord.h \
+    doccreatemedrecord2.h \
+    doctormainwindow.h \
     doctorregister.h \
+    hopitalmainpage.h \
     loginwindow.h \
+    nursemainpage.h \
     nurseregister.h \
+    patientmainpage.h \
     patientregister.h \
     registerwindow.h
 
 FORMS += \
+    admin.ui \
+    docappt.ui \
+    doccreatemedrecord.ui \
+    doccreatemedrecord2.ui \
+    doctormainwindow.ui \
     doctorregister.ui \
+    hopitalmainpage.ui \
     loginwindow.ui \
+    nursemainpage.ui \
     nurseregister.ui \
+    patientmainpage.ui \
     patientregister.ui \
     registerwindow.ui
 
