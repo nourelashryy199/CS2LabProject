@@ -11,6 +11,10 @@ struct Doctor {
     QString id;
     QString password;
     QString assistant;
+    QString workingDays;
+    QString workingHours;
+    QString hoursFrom;
+    QString hoursTo;
 };
 
 struct Nurse {

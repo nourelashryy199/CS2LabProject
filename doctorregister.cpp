@@ -27,10 +27,48 @@ void doctorRegister::on_pushButton_clicked()
     QString retypePassword = ui->repassEdit->text();
     QString specialization = ui->comboBox->currentText();
     QString assistant = ui->assistantEdit->text();
+    QString wD;
+    QString wI;
+    QString from = ui->comboBoxFrom->currentText();
+    QString to = ui->comboBoxTo->currentText();
+
+    QCheckBox *checkBoxes[] = {ui->checkBoxU, ui->checkBoxM, ui->checkBoxT, ui->checkBoxW, ui->checkBoxR};
+    QString days[] = {"U", "M", "T", "W", "R"};
+
+
+    char daysChar[] = {'U', 'M', 'T', 'W', 'R'};
+
+    for (int i = 0; i < 5; ++i) {
+        if (checkBoxes[i]->isChecked()) {
+            bool alreadyAdded = false;
+            for (int j = 0; j < 5; ++j) {
+                if (ourDoctors[doctorsCount].workingDays[j] == daysChar[i]) {
+                    alreadyAdded = true;
+                    break;
+                }
+            }
+            if (!alreadyAdded) {
+                for (int j = 0; j < 5; ++j) {
+                    if (ourDoctors[doctorsCount].workingDays[j] == '\0') {
+                        ourDoctors[doctorsCount].workingDays[j] = daysChar[i];
+                        break;
+                    }
+                }
+            }
+        }
+    }
+
+    if(ui->radioButtonAM->isChecked()){
+        wI = "AM";
+}
+    else if(ui->radioButtonPM->isChecked()){
+        wI = "PM";
+    }
 
     bool hasError = false;
 
-    if (name.isEmpty() || id.isEmpty() || password.isEmpty() || retypePassword.isEmpty() || specialization.isEmpty()) {
+    if (name.isEmpty() || id.isEmpty() || password.isEmpty() || retypePassword.isEmpty() || specialization.isEmpty()
+        || wI.isEmpty() || wD.isEmpty() || from.isEmpty() || to.isEmpty()) {
         ui->errorCheck->setVisible(true);
         hasError = true;
     }
@@ -57,6 +95,10 @@ void doctorRegister::on_pushButton_clicked()
     ourDoctors[doctorsCount].password = password;
     ourDoctors[doctorsCount].specialization = specialization;
     ourDoctors[doctorsCount].assistant = assistant;
+    ourDoctors[doctorsCount].workingHours =wI;
+    ourDoctors[doctorsCount].hoursFrom = from;
+    ourDoctors[doctorsCount].hoursTo = to;
+
 
     doctorsCount++;
 

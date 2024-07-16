@@ -22,13 +22,13 @@ class Ui_loginWindow
 {
 public:
     QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
+    QLabel *IDLoginlabel;
+    QLabel *Passwordlabel;
     QLabel *label_error;
-    QLineEdit *lineEdit_id;
-    QLineEdit *lineEdit_password;
-    QPushButton *pushButton_login;
-    QPushButton *pushButton_register;
+    QLineEdit *IDlineEdit;
+    QLineEdit *PasswordlineEdit;
+    QPushButton *LoginpushButton;
+    QPushButton *RegisterpushButton;
 
     void setupUi(QDialog *loginWindow)
     {
@@ -39,29 +39,29 @@ public:
         label->setObjectName("label");
         label->setGeometry(QRect(120, 10, 291, 51));
         label->setAlignment(Qt::AlignCenter);
-        label_2 = new QLabel(loginWindow);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(120, 70, 31, 41));
-        label_3 = new QLabel(loginWindow);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(100, 130, 71, 41));
+        IDLoginlabel = new QLabel(loginWindow);
+        IDLoginlabel->setObjectName("IDLoginlabel");
+        IDLoginlabel->setGeometry(QRect(120, 70, 31, 41));
+        Passwordlabel = new QLabel(loginWindow);
+        Passwordlabel->setObjectName("Passwordlabel");
+        Passwordlabel->setGeometry(QRect(100, 130, 71, 41));
         label_error = new QLabel(loginWindow);
         label_error->setObjectName("label_error");
         label_error->setGeometry(QRect(130, 180, 261, 41));
-        lineEdit_id = new QLineEdit(loginWindow);
-        lineEdit_id->setObjectName("lineEdit_id");
-        lineEdit_id->setGeometry(QRect(180, 70, 181, 41));
-        lineEdit_password = new QLineEdit(loginWindow);
-        lineEdit_password->setObjectName("lineEdit_password");
-        lineEdit_password->setGeometry(QRect(180, 130, 181, 41));
-        pushButton_login = new QPushButton(loginWindow);
-        pushButton_login->setObjectName("pushButton_login");
-        pushButton_login->setGeometry(QRect(110, 240, 121, 71));
-        pushButton_login->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
-        pushButton_register = new QPushButton(loginWindow);
-        pushButton_register->setObjectName("pushButton_register");
-        pushButton_register->setGeometry(QRect(290, 240, 121, 71));
-        pushButton_register->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
+        IDlineEdit = new QLineEdit(loginWindow);
+        IDlineEdit->setObjectName("IDlineEdit");
+        IDlineEdit->setGeometry(QRect(180, 70, 181, 41));
+        PasswordlineEdit = new QLineEdit(loginWindow);
+        PasswordlineEdit->setObjectName("PasswordlineEdit");
+        PasswordlineEdit->setGeometry(QRect(180, 130, 181, 41));
+        LoginpushButton = new QPushButton(loginWindow);
+        LoginpushButton->setObjectName("LoginpushButton");
+        LoginpushButton->setGeometry(QRect(110, 240, 121, 71));
+        LoginpushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
+        RegisterpushButton = new QPushButton(loginWindow);
+        RegisterpushButton->setObjectName("RegisterpushButton");
+        RegisterpushButton->setGeometry(QRect(290, 240, 121, 71));
+        RegisterpushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
 
         retranslateUi(loginWindow);
 
@@ -72,11 +72,11 @@ public:
     {
         loginWindow->setWindowTitle(QCoreApplication::translate("loginWindow", "Dialog", nullptr));
         label->setText(QCoreApplication::translate("loginWindow", "<html><head/><body><p><span style=\" font-size:11pt; color:#0000ff;\">Hospital Managment System</span></p></body></html>", nullptr));
-        label_2->setText(QCoreApplication::translate("loginWindow", "ID", nullptr));
-        label_3->setText(QCoreApplication::translate("loginWindow", "Password", nullptr));
+        IDLoginlabel->setText(QCoreApplication::translate("loginWindow", "ID", nullptr));
+        Passwordlabel->setText(QCoreApplication::translate("loginWindow", "Password", nullptr));
         label_error->setText(QCoreApplication::translate("loginWindow", "<html><head/><body><p><span style=\" color:#aa0000;\">ERROR: Wrong Username Or Password</span></p></body></html>", nullptr));
-        pushButton_login->setText(QCoreApplication::translate("loginWindow", "Login", nullptr));
-        pushButton_register->setText(QCoreApplication::translate("loginWindow", "Register", nullptr));
+        LoginpushButton->setText(QCoreApplication::translate("loginWindow", "Login", nullptr));
+        RegisterpushButton->setText(QCoreApplication::translate("loginWindow", "Register", nullptr));
     } // retranslateUi
 
 };

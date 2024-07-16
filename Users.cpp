@@ -15,6 +15,10 @@ void initializeUsersData() {
     ourDoctors[0].id = "01001";
     ourDoctors[0].password = "nour";
     ourDoctors[0].assistant = "Mostafa";
+    ourDoctors[0].workingHours = "AM";
+    ourDoctors[0].workingDays = "UW";
+    ourDoctors[0].hoursFrom = "12:00";
+    ourDoctors[0].hoursTo = "2:00";
 
     ourNurses[0].name = "Mostafa";
     ourNurses[0].id = "02001";
