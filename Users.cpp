@@ -34,4 +34,8 @@ void initializeUsersData() {
     ourPatients[0].weight = "75.5";
     ourPatients[0].height = "173";
     ourPatients[0].diet = "Balanced diet";
+
+    ourAdmins[0].name = "admin";
+    ourAdmins[0].id = "00001";
+    ourAdmins[0].password = "admin";
 }

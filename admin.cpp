@@ -1,5 +1,9 @@
 #include "admin.h"
 #include "ui_admin.h"
+#include "Users.h"
+#include "changedoc.h"
+#include "changenurse.h"
+
 
 admin::admin(QWidget *parent)
     : QDialog(parent)
@@ -15,6 +19,16 @@ admin::~admin()
 
 void admin::on_pushButton_clicked()
 {
+    if(ui->radioButtonDoc->isChecked()){
+        changedoc* changeDoc = new changedoc(this);
+        changeDoc->show();
+    }
+    if(ui->radioButtonNurse->isChecked()){
+        changenurse* changeNurse = new changenurse(this);
+        changeNurse->show();
+    }
+    if(ui->radioButtonPatient->isChecked()){
 
+    }
 }
 

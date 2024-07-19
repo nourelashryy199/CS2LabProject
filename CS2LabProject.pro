@@ -11,6 +11,9 @@ CONFIG += c++17
 SOURCES += \
     Users.cpp \
     admin.cpp \
+    adminregister.cpp \
+    changedoc.cpp \
+    changenurse.cpp \
     docappt.cpp \
     doccreatemedrecord.cpp \
     doccreatemedrecord2.cpp \
@@ -28,6 +31,9 @@ SOURCES += \
 HEADERS += \
     Users.h \
     admin.h \
+    adminregister.h \
+    changedoc.h \
+    changenurse.h \
     docappt.h \
     doccreatemedrecord.h \
     doccreatemedrecord2.h \
@@ -43,6 +49,9 @@ HEADERS += \
 
 FORMS += \
     admin.ui \
+    adminregister.ui \
+    changedoc.ui \
+    changenurse.ui \
     docappt.ui \
     doccreatemedrecord.ui \
     doccreatemedrecord2.ui \
