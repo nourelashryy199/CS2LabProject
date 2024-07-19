@@ -1,5 +1,7 @@
 #include "adminregister.h"
+#include "loginwindow.h"
 #include "ui_adminregister.h"
+#include "Users.h"
 
 adminregister::adminregister(QWidget *parent)
     : QDialog(parent)

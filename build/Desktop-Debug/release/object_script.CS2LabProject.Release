@@ -1,5 +1,9 @@
 release/Users.o
 release/admin.o
+release/adminregister.o
+release/changedoc.o
+release/changenurse.o
+release/changepatient.o
 release/docappt.o
 release/doccreatemedrecord.o
 release/doccreatemedrecord2.o
@@ -14,6 +18,10 @@ release/patientmainpage.o
 release/patientregister.o
 release/registerwindow.o
 release/moc_admin.o
+release/moc_adminregister.o
+release/moc_changedoc.o
+release/moc_changenurse.o
+release/moc_changepatient.o
 release/moc_docappt.o
 release/moc_doccreatemedrecord.o
 release/moc_doccreatemedrecord2.o

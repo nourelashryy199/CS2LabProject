@@ -7,6 +7,7 @@ changenurse::changenurse(QWidget *parent)
     , ui(new Ui::changenurse)
 {
     ui->setupUi(this);
+    ui->errorSuccessfuly->setVisible(false);
 }
 
 changenurse::~changenurse()
@@ -24,7 +25,8 @@ void changenurse::on_pushButtonSearch_clicked()
             ui->idEdit->setText(ourNurses[i].id);
             ui->passwordEdit->setText(ourNurses[i].password);
             ui->supervisorEdit->setText(ourNurses[i].assistantTo);
-        }
+        }break;
+
     }
 }
 
@@ -41,6 +43,7 @@ void changenurse::on_pushButtonApply_clicked()
             ourNurses[i].assistantTo = ui->supervisorEdit->text();
 
             ui->errorSuccessfuly->setVisible(true);
+            break;
         }
 
     }

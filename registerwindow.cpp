@@ -3,6 +3,7 @@
 #include "doctorregister.h"
 #include "nurseregister.h"
 #include "patientregister.h"
+#include "adminregister.h"
 
 
 registerWindow::registerWindow(QWidget *parent)
@@ -34,6 +35,11 @@ void registerWindow::on_pushButton_clicked()
     else if(ui->radioButtonPatient->isChecked()){
         patientregister * patientRegisterWindow = new patientregister(this);
         patientRegisterWindow->show();
+        hide();
+    }
+    else if(ui->radioButtonAdmin->isChecked()){
+        adminregister * adminRegisterWindow = new adminregister(this);
+        adminRegisterWindow->show();
         hide();
     }
     else{

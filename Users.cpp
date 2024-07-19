@@ -3,10 +3,12 @@
 Doctor ourDoctors[100];
 Nurse ourNurses[100];
 Patient ourPatients[100];
+Admin ourAdmins[100];
 
 int doctorsCount = 1;
 int nursesCount = 1;
 int patientsCount = 1;
+int adminsCount = 1;
 
 void initializeUsersData() {
 

@@ -3,6 +3,7 @@
 #include "Users.h"
 #include "changedoc.h"
 #include "changenurse.h"
+#include "changepatient.h"
 
 
 admin::admin(QWidget *parent)
@@ -28,7 +29,8 @@ void admin::on_pushButton_clicked()
         changeNurse->show();
     }
     if(ui->radioButtonPatient->isChecked()){
-
+        changepatient* changePatient = new changepatient(this);
+        changePatient->show();
     }
 }
 

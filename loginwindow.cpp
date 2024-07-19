@@ -2,6 +2,9 @@
 #include "ui_loginwindow.h"
 #include "registerwindow.h"
 #include "doctormainwindow.h"
+#include "nursemainpage.h"
+#include "patientmainpage.h"
+#include "admin.h"
 #include "Users.h"
 #include <QDebug>
 
@@ -45,6 +48,22 @@ void loginWindow::on_LoginpushButton_clicked()
             hide();
             DoctorMainWindow* doctorMainWindow = new DoctorMainWindow(this);
             doctorMainWindow->show();
+            break;
+        }
+        if(ourNurses[i].id == id && ourNurses[i].password == password){
+            loginSuccessful = true;
+            qDebug() << "Login successful for Nurse:" << ourNurses[i].name;
+            hide();
+            NurseMainPage* nurseMain = new NurseMainPage(this);
+            nurseMain->show();
+            break;
+        }
+        if(ourPatients[i].id == id && ourNurses[i].password == password){
+            loginSuccessful = true;
+            qDebug() << "Login successful for Doctor:" << ourDoctors[i].name;
+            hide();
+            PatientMainPage* patientMain = new PatientMainPage(this);
+            patientMain->show();
             break;
         }
     }

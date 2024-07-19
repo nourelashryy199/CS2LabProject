@@ -1,5 +1,9 @@
 debug/Users.o
 debug/admin.o
+debug/adminregister.o
+debug/changedoc.o
+debug/changenurse.o
+debug/changepatient.o
 debug/docappt.o
 debug/doccreatemedrecord.o
 debug/doccreatemedrecord2.o
@@ -14,6 +18,10 @@ debug/patientmainpage.o
 debug/patientregister.o
 debug/registerwindow.o
 debug/moc_admin.o
+debug/moc_adminregister.o
+debug/moc_changedoc.o
+debug/moc_changenurse.o
+debug/moc_changepatient.o
 debug/moc_docappt.o
 debug/moc_doccreatemedrecord.o
 debug/moc_doccreatemedrecord2.o

@@ -30,6 +30,7 @@ void changedoc::on_pushButtonSearch_clicked()
             ui->fromEdit->setText(ourDoctors[i].hoursFrom);
             ui->toEdit->setText(ourDoctors[i].hoursTo);
             ui->wdEdit->setText(ourDoctors[i].workingDays);
+            break;
         }
     }
 }
@@ -53,6 +54,7 @@ void changedoc::on_pushButton_clicked()
     ourDoctors[i].workingDays = ui->wdEdit->text();
 
     ui->errorSuccessfuly->setVisible(true);
+    break;
         }
 
     }

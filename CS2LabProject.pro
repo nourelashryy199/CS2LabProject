@@ -14,6 +14,7 @@ SOURCES += \
     adminregister.cpp \
     changedoc.cpp \
     changenurse.cpp \
+    changepatient.cpp \
     docappt.cpp \
     doccreatemedrecord.cpp \
     doccreatemedrecord2.cpp \
@@ -34,6 +35,7 @@ HEADERS += \
     adminregister.h \
     changedoc.h \
     changenurse.h \
+    changepatient.h \
     docappt.h \
     doccreatemedrecord.h \
     doccreatemedrecord2.h \
@@ -52,6 +54,7 @@ FORMS += \
     adminregister.ui \
     changedoc.ui \
     changenurse.ui \
+    changepatient.ui \
     docappt.ui \
     doccreatemedrecord.ui \
     doccreatemedrecord2.ui \
