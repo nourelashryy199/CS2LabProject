@@ -12,3 +12,9 @@ admin::~admin()
 {
     delete ui;
 }
+
+void admin::on_pushButton_clicked()
+{
+
+}
+
