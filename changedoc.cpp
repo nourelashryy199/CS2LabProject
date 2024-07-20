@@ -8,6 +8,7 @@ changedoc::changedoc(QWidget *parent)
 {
     ui->setupUi(this);
     ui->errorSuccessfuly->setVisible(false);
+    ui->errorExisting->setVisible(false);
 }
 
 changedoc::~changedoc()

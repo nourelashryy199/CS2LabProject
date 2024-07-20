@@ -4,6 +4,7 @@
 #include "changedoc.h"
 #include "changenurse.h"
 #include "changepatient.h"
+#include "loginWindow.h"
 
 
 admin::admin(QWidget *parent)
@@ -32,5 +33,14 @@ void admin::on_pushButton_clicked()
         changepatient* changePatient = new changepatient(this);
         changePatient->show();
     }
+}
+
+
+void admin::on_pushButton_2_clicked()
+{
+    hide();
+    loginWindow* login = new loginWindow(this);
+    login->show();
+
 }
 

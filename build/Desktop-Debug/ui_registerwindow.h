@@ -30,24 +30,25 @@ public:
     QRadioButton *radioButtonDoctor;
     QRadioButton *radioButtonNurse;
     QRadioButton *radioButtonPatient;
+    QRadioButton *radioButtonAdmin;
     QLabel *label_error;
 
     void setupUi(QDialog *registerWindow)
     {
         if (registerWindow->objectName().isEmpty())
             registerWindow->setObjectName("registerWindow");
-        registerWindow->resize(485, 298);
+        registerWindow->resize(485, 324);
         registerQ = new QLabel(registerWindow);
         registerQ->setObjectName("registerQ");
         registerQ->setGeometry(QRect(60, 10, 371, 61));
         registerQ->setAlignment(Qt::AlignCenter);
         pushButton = new QPushButton(registerWindow);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(170, 220, 151, 41));
+        pushButton->setGeometry(QRect(170, 250, 151, 41));
         pushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
         layoutWidget = new QWidget(registerWindow);
         layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(180, 70, 133, 88));
+        layoutWidget->setGeometry(QRect(180, 70, 133, 119));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -66,9 +67,14 @@ public:
 
         verticalLayout->addWidget(radioButtonPatient);
 
+        radioButtonAdmin = new QRadioButton(layoutWidget);
+        radioButtonAdmin->setObjectName("radioButtonAdmin");
+
+        verticalLayout->addWidget(radioButtonAdmin);
+
         label_error = new QLabel(registerWindow);
         label_error->setObjectName("label_error");
-        label_error->setGeometry(QRect(130, 170, 261, 41));
+        label_error->setGeometry(QRect(120, 200, 261, 41));
 
         retranslateUi(registerWindow);
 
@@ -83,6 +89,7 @@ public:
         radioButtonDoctor->setText(QCoreApplication::translate("registerWindow", "Doctor Account", nullptr));
         radioButtonNurse->setText(QCoreApplication::translate("registerWindow", "Nurse Account", nullptr));
         radioButtonPatient->setText(QCoreApplication::translate("registerWindow", "Patient Account", nullptr));
+        radioButtonAdmin->setText(QCoreApplication::translate("registerWindow", "Admin Account", nullptr));
         label_error->setText(QCoreApplication::translate("registerWindow", "<html><head/><body><p><span style=\" color:#aa0000;\">ERROR: Please Select An Account Type</span></p></body></html>", nullptr));
     } // retranslateUi
 

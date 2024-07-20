@@ -8,6 +8,7 @@ changenurse::changenurse(QWidget *parent)
 {
     ui->setupUi(this);
     ui->errorSuccessfuly->setVisible(false);
+    ui->errorExisting_2->setVisible(false);
 }
 
 changenurse::~changenurse()

@@ -66,91 +66,91 @@ public:
     {
         if (doctorRegister->objectName().isEmpty())
             doctorRegister->setObjectName("doctorRegister");
-        doctorRegister->resize(627, 891);
+        doctorRegister->resize(627, 735);
         label = new QLabel(doctorRegister);
         label->setObjectName("label");
-        label->setGeometry(QRect(80, 120, 61, 51));
+        label->setGeometry(QRect(80, 90, 61, 41));
         label->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_2 = new QLabel(doctorRegister);
         label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(80, 180, 141, 51));
+        label_2->setGeometry(QRect(80, 130, 141, 41));
         label_2->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_3 = new QLabel(doctorRegister);
         label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(80, 240, 141, 51));
+        label_3->setGeometry(QRect(80, 180, 141, 31));
         label_3->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_4 = new QLabel(doctorRegister);
         label_4->setObjectName("label_4");
-        label_4->setGeometry(QRect(80, 360, 141, 51));
+        label_4->setGeometry(QRect(80, 260, 141, 41));
         label_4->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_5 = new QLabel(doctorRegister);
         label_5->setObjectName("label_5");
-        label_5->setGeometry(QRect(80, 420, 141, 51));
+        label_5->setGeometry(QRect(80, 310, 141, 31));
         label_5->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_6 = new QLabel(doctorRegister);
         label_6->setObjectName("label_6");
-        label_6->setGeometry(QRect(92, 0, 381, 61));
+        label_6->setGeometry(QRect(92, 0, 381, 41));
         label_6->setAlignment(Qt::AlignCenter);
         nameEdit = new QLineEdit(doctorRegister);
         nameEdit->setObjectName("nameEdit");
-        nameEdit->setGeometry(QRect(210, 130, 201, 41));
+        nameEdit->setGeometry(QRect(210, 100, 201, 31));
         idEdit = new QLineEdit(doctorRegister);
         idEdit->setObjectName("idEdit");
-        idEdit->setGeometry(QRect(210, 190, 201, 41));
+        idEdit->setGeometry(QRect(210, 140, 201, 31));
         passwordEdit = new QLineEdit(doctorRegister);
         passwordEdit->setObjectName("passwordEdit");
-        passwordEdit->setGeometry(QRect(210, 250, 201, 41));
+        passwordEdit->setGeometry(QRect(210, 180, 201, 31));
         assistantEdit = new QLineEdit(doctorRegister);
         assistantEdit->setObjectName("assistantEdit");
-        assistantEdit->setGeometry(QRect(210, 430, 201, 41));
+        assistantEdit->setGeometry(QRect(210, 310, 201, 31));
         errorExisting = new QLabel(doctorRegister);
         errorExisting->setObjectName("errorExisting");
-        errorExisting->setGeometry(QRect(420, 180, 121, 51));
+        errorExisting->setGeometry(QRect(420, 130, 121, 51));
         errorExisting->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         label_8 = new QLabel(doctorRegister);
         label_8->setObjectName("label_8");
-        label_8->setGeometry(QRect(120, 40, 331, 51));
+        label_8->setGeometry(QRect(120, 40, 331, 21));
         label_8->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         pushButton = new QPushButton(doctorRegister);
         pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(140, 808, 131, 71));
+        pushButton->setGeometry(QRect(140, 658, 131, 71));
         pushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
         errorCheck = new QLabel(doctorRegister);
         errorCheck->setObjectName("errorCheck");
-        errorCheck->setGeometry(QRect(310, 820, 161, 51));
+        errorCheck->setGeometry(QRect(310, 670, 161, 51));
         errorCheck->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         errorID = new QLabel(doctorRegister);
         errorID->setObjectName("errorID");
-        errorID->setGeometry(QRect(160, 80, 251, 51));
+        errorID->setGeometry(QRect(160, 70, 251, 21));
         errorID->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         LabelPassRe = new QLabel(doctorRegister);
         LabelPassRe->setObjectName("LabelPassRe");
-        LabelPassRe->setGeometry(QRect(80, 310, 121, 41));
+        LabelPassRe->setGeometry(QRect(80, 220, 121, 31));
         repassEdit = new QLineEdit(doctorRegister);
         repassEdit->setObjectName("repassEdit");
-        repassEdit->setGeometry(QRect(210, 310, 201, 41));
+        repassEdit->setGeometry(QRect(210, 220, 201, 31));
         repassEdit->setEchoMode(QLineEdit::Password);
         LabelPassError = new QLabel(doctorRegister);
         LabelPassError->setObjectName("LabelPassError");
-        LabelPassError->setGeometry(QRect(420, 310, 191, 41));
+        LabelPassError->setGeometry(QRect(420, 220, 191, 31));
         comboBox = new QComboBox(doctorRegister);
         comboBox->addItem(QString());
         comboBox->addItem(QString());
@@ -164,16 +164,16 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->setObjectName("comboBox");
-        comboBox->setGeometry(QRect(209, 375, 201, 41));
+        comboBox->setGeometry(QRect(209, 265, 201, 31));
         labelHours = new QLabel(doctorRegister);
         labelHours->setObjectName("labelHours");
-        labelHours->setGeometry(QRect(80, 480, 141, 51));
+        labelHours->setGeometry(QRect(80, 350, 141, 51));
         labelHours->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         groupBoxInterval = new QGroupBox(doctorRegister);
         groupBoxInterval->setObjectName("groupBoxInterval");
-        groupBoxInterval->setGeometry(QRect(210, 480, 201, 61));
+        groupBoxInterval->setGeometry(QRect(210, 350, 201, 61));
         radioButtonAM = new QRadioButton(groupBoxInterval);
         radioButtonAM->setObjectName("radioButtonAM");
         radioButtonAM->setGeometry(QRect(30, 30, 71, 24));
@@ -182,13 +182,13 @@ public:
         radioButtonPM->setGeometry(QRect(130, 30, 71, 24));
         labelHoursDays = new QLabel(doctorRegister);
         labelHoursDays->setObjectName("labelHoursDays");
-        labelHoursDays->setGeometry(QRect(80, 650, 111, 51));
+        labelHoursDays->setGeometry(QRect(80, 520, 111, 51));
         labelHoursDays->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         groupBoxDays = new QGroupBox(doctorRegister);
         groupBoxDays->setObjectName("groupBoxDays");
-        groupBoxDays->setGeometry(QRect(200, 650, 301, 131));
+        groupBoxDays->setGeometry(QRect(200, 520, 301, 131));
         checkBoxU = new QCheckBox(groupBoxDays);
         checkBoxU->setObjectName("checkBoxU");
         checkBoxU->setGeometry(QRect(30, 30, 91, 24));
@@ -206,13 +206,13 @@ public:
         checkBoxR->setGeometry(QRect(30, 90, 91, 24));
         labelHours_2 = new QLabel(doctorRegister);
         labelHours_2->setObjectName("labelHours_2");
-        labelHours_2->setGeometry(QRect(80, 560, 141, 51));
+        labelHours_2->setGeometry(QRect(80, 430, 141, 51));
         labelHours_2->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
         groupBoxHours = new QGroupBox(doctorRegister);
         groupBoxHours->setObjectName("groupBoxHours");
-        groupBoxHours->setGeometry(QRect(210, 550, 301, 101));
+        groupBoxHours->setGeometry(QRect(210, 420, 301, 101));
         comboBoxFrom = new QComboBox(groupBoxHours);
         comboBoxFrom->addItem(QString());
         comboBoxFrom->addItem(QString());

@@ -22,49 +22,59 @@ loginWindow::~loginWindow()
     delete ui;
 }
 
-void loginWindow::on_pushButton_register_clicked()
-{
-    hide();
-    registerWindow* registerWindow = new class registerWindow(this);
-    registerWindow->show();
-}
 
 void loginWindow::on_LoginpushButton_clicked()
 {
-    QString id = ui->IDlineEdit->text();
-    QString password = ui->PasswordlineEdit->text();
+    QString iD = ui->IDlineEdit->text();
+    QString pass = ui->PasswordlineEdit->text();
 
-    qDebug() << "Entered ID:" << id;
-    qDebug() << "Entered Password:" << password;
+    qDebug() << "Entered ID:" << iD;
+    qDebug() << "Entered Password:" << pass;
 
     bool loginSuccessful = false;
 
-
-    for (int i = 0; i < doctorsCount; ++i) {
-        qDebug() << "Checking against Doctor ID:" << ourDoctors[i].id << "Password:" << ourDoctors[i].password;
-        if (ourDoctors[i].id == id && ourDoctors[i].password == password) {
-            loginSuccessful = true;
-            qDebug() << "Login successful for Doctor:" << ourDoctors[i].name;
-            hide();
-            DoctorMainWindow* doctorMainWindow = new DoctorMainWindow(this);
-            doctorMainWindow->show();
-            break;
+    if (iD.left(2) == "00"){
+        for (int i = 0; i <adminsCount;i++){
+            if(ourAdmins[i].id == iD && ourAdmins[i].password == pass){
+                hide();
+                admin* adminWindow = new admin(this);
+                adminWindow->show();
+            }
+            else
+                ui->label_error->setVisible(true);
         }
-        if(ourNurses[i].id == id && ourNurses[i].password == password){
-            loginSuccessful = true;
-            qDebug() << "Login successful for Nurse:" << ourNurses[i].name;
-            hide();
-            NurseMainPage* nurseMain = new NurseMainPage(this);
-            nurseMain->show();
-            break;
+    }
+    if (iD.left(2) == "01"){
+        for (int i = 0; i <doctorsCount;i++){
+            if(ourDoctors[i].id == iD && ourDoctors[i].password == pass){
+                hide();
+                DoctorMainWindow* doctorWindow = new DoctorMainWindow(this);
+                doctorWindow->show();
+            }
+            else
+                ui->label_error->setVisible(true);
         }
-        if(ourPatients[i].id == id && ourNurses[i].password == password){
-            loginSuccessful = true;
-            qDebug() << "Login successful for Doctor:" << ourDoctors[i].name;
-            hide();
-            PatientMainPage* patientMain = new PatientMainPage(this);
-            patientMain->show();
-            break;
+    }
+    if (iD.left(2) == "02"){
+        for (int i = 0; i <nursesCount;i++){
+            if(ourNurses[i].id == iD && ourNurses[i].password == pass){
+                hide();
+                NurseMainPage* nurseWindow = new NurseMainPage(this);
+                nurseWindow->show();
+            }
+            else
+                ui->label_error->setVisible(true);
+        }
+    }
+    if (iD.left(2) == "03"){
+        for (int i = 0; i <patientsCount;i++){
+            if(ourPatients[i].id == iD && ourPatients[i].password == pass){
+                hide();
+                PatientMainPage* patientWindow = new PatientMainPage(this);
+                patientWindow->show();
+            }
+            else
+                ui->label_error->setVisible(true);
         }
     }
 
@@ -73,3 +83,11 @@ void loginWindow::on_LoginpushButton_clicked()
         ui->label_error->setText("Invalid ID or Password");
     }
 }
+
+void loginWindow::on_RegisterpushButton_clicked()
+{
+    hide();
+    registerWindow* registerWindow = new class registerWindow(this);
+    registerWindow->show();
+}
+

@@ -8,6 +8,10 @@ adminregister::adminregister(QWidget *parent)
     , ui(new Ui::adminregister)
 {
     ui->setupUi(this);
+    ui->errorID->setVisible(false);
+    ui->errorCheck->setVisible(false);
+    ui->errorExisting->setVisible(false);
+    ui->LabelPassError->setVisible(false);
 }
 
 adminregister::~adminregister()
