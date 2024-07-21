@@ -67,6 +67,6 @@ extern int patientsCount;
 extern int adminsCount;
 
 
-void initializeUsersData();  // Add this line
+void initializeUsersData();
 
 #endif // USERS_H

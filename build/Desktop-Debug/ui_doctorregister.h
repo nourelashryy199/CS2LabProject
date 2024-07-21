@@ -37,7 +37,6 @@ public:
     QLineEdit *assistantEdit;
     QLabel *errorExisting;
     QLabel *label_8;
-    QPushButton *pushButton;
     QLabel *errorCheck;
     QLabel *errorID;
     QLabel *LabelPassRe;
@@ -61,6 +60,7 @@ public:
     QLabel *labelFrom;
     QLabel *labelTo;
     QComboBox *comboBoxTo;
+    QPushButton *pushButtonRegister;
 
     void setupUi(QDialog *doctorRegister)
     {
@@ -125,10 +125,6 @@ public:
         label_8->setStyleSheet(QString::fromUtf8("QLabel{\n"
 "font-size:15px\n"
 "}"));
-        pushButton = new QPushButton(doctorRegister);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(140, 658, 131, 71));
-        pushButton->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
         errorCheck = new QLabel(doctorRegister);
         errorCheck->setObjectName("errorCheck");
         errorCheck->setGeometry(QRect(310, 670, 161, 51));
@@ -273,6 +269,10 @@ public:
         comboBoxTo->addItem(QString());
         comboBoxTo->setObjectName("comboBoxTo");
         comboBoxTo->setGeometry(QRect(160, 50, 111, 26));
+        pushButtonRegister = new QPushButton(doctorRegister);
+        pushButtonRegister->setObjectName("pushButtonRegister");
+        pushButtonRegister->setGeometry(QRect(130, 658, 131, 61));
+        pushButtonRegister->setStyleSheet(QString::fromUtf8("font: 900 9pt \"Segoe UI Black\";"));
 
         retranslateUi(doctorRegister);
 
@@ -290,7 +290,6 @@ public:
         label_6->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" font-size:12pt; color:#0000ff;\">Please enter your details</span></p></body></html>", nullptr));
         errorExisting->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" font-size:9pt; color:#aa0000;\">*Already Existing</span></p></body></html>", nullptr));
         label_8->setText(QCoreApplication::translate("doctorRegister", "Note: Please Make sure that the ID starts with 01", nullptr));
-        pushButton->setText(QCoreApplication::translate("doctorRegister", "Register", nullptr));
         errorCheck->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" font-size:9pt; color:#aa0000;\">*All fields must be filled</span></p></body></html>", nullptr));
         errorID->setText(QCoreApplication::translate("doctorRegister", "<html><head/><body><p><span style=\" color:#aa0000;\">ERROR: ID IS NOT STARTING WITH 01</span></p></body></html>", nullptr));
         LabelPassRe->setText(QCoreApplication::translate("doctorRegister", "Re-type Password:", nullptr));
@@ -308,18 +307,18 @@ public:
         comboBox->setItemText(10, QCoreApplication::translate("doctorRegister", "Dietitian", nullptr));
 
         labelHours->setText(QCoreApplication::translate("doctorRegister", "Working Interval:", nullptr));
-        groupBoxInterval->setTitle(QCoreApplication::translate("doctorRegister", "GroupBox", nullptr));
+        groupBoxInterval->setTitle(QString());
         radioButtonAM->setText(QCoreApplication::translate("doctorRegister", "AM", nullptr));
         radioButtonPM->setText(QCoreApplication::translate("doctorRegister", "PM", nullptr));
         labelHoursDays->setText(QCoreApplication::translate("doctorRegister", "Working Days:", nullptr));
-        groupBoxDays->setTitle(QCoreApplication::translate("doctorRegister", "GroupBox", nullptr));
+        groupBoxDays->setTitle(QString());
         checkBoxU->setText(QCoreApplication::translate("doctorRegister", "U", nullptr));
         checkBoxT->setText(QCoreApplication::translate("doctorRegister", "T", nullptr));
         checkBoxM->setText(QCoreApplication::translate("doctorRegister", "M", nullptr));
         checkBoxW->setText(QCoreApplication::translate("doctorRegister", "W", nullptr));
         checkBoxR->setText(QCoreApplication::translate("doctorRegister", "R", nullptr));
         labelHours_2->setText(QCoreApplication::translate("doctorRegister", "Working Hours:", nullptr));
-        groupBoxHours->setTitle(QCoreApplication::translate("doctorRegister", "GroupBox", nullptr));
+        groupBoxHours->setTitle(QString());
         comboBoxFrom->setItemText(0, QCoreApplication::translate("doctorRegister", "Select Field", nullptr));
         comboBoxFrom->setItemText(1, QCoreApplication::translate("doctorRegister", "1:00", nullptr));
         comboBoxFrom->setItemText(2, QCoreApplication::translate("doctorRegister", "1:30", nullptr));
@@ -372,6 +371,7 @@ public:
         comboBoxTo->setItemText(22, QCoreApplication::translate("doctorRegister", "11:30", nullptr));
         comboBoxTo->setItemText(23, QCoreApplication::translate("doctorRegister", "12:00", nullptr));
 
+        pushButtonRegister->setText(QCoreApplication::translate("doctorRegister", "Register", nullptr));
     } // retranslateUi
 
 };

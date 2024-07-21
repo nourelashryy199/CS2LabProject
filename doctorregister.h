@@ -16,7 +16,9 @@ public:
     ~doctorRegister();
 
 private slots:
-    void on_pushButton_clicked();
+
+
+    void on_pushButtonRegister_clicked();
 
 private:
     Ui::doctorRegister *ui;

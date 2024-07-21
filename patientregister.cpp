@@ -50,7 +50,7 @@ void patientregister::on_pushButton_clicked()
         hasError = true;
     }
 
-    if (id.left(2) != "02") {
+    if (id.left(2) != "03") {
         ui->errorID->setVisible(true);
         hasError = true;
     }

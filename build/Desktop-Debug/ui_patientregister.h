@@ -141,7 +141,7 @@ public:
         ageEdit = new QLineEdit(patientregister);
         ageEdit->setObjectName("ageEdit");
         ageEdit->setGeometry(QRect(210, 340, 201, 41));
-        ageEdit->setEchoMode(QLineEdit::Password);
+        ageEdit->setEchoMode(QLineEdit::Normal);
         LabelPassRe_2 = new QLabel(patientregister);
         LabelPassRe_2->setObjectName("LabelPassRe_2");
         LabelPassRe_2->setGeometry(QRect(80, 340, 121, 41));
@@ -151,7 +151,7 @@ public:
         weightEdit = new QLineEdit(patientregister);
         weightEdit->setObjectName("weightEdit");
         weightEdit->setGeometry(QRect(210, 390, 201, 41));
-        weightEdit->setEchoMode(QLineEdit::Password);
+        weightEdit->setEchoMode(QLineEdit::Normal);
         label_9 = new QLabel(patientregister);
         label_9->setObjectName("label_9");
         label_9->setGeometry(QRect(420, 380, 331, 51));
@@ -189,7 +189,7 @@ public:
         heightEdit = new QLineEdit(patientregister);
         heightEdit->setObjectName("heightEdit");
         heightEdit->setGeometry(QRect(210, 440, 201, 41));
-        heightEdit->setEchoMode(QLineEdit::Password);
+        heightEdit->setEchoMode(QLineEdit::Normal);
         LabelPassRe_6 = new QLabel(patientregister);
         LabelPassRe_6->setObjectName("LabelPassRe_6");
         LabelPassRe_6->setGeometry(QRect(80, 440, 121, 41));

@@ -12,6 +12,9 @@ doctorRegister::doctorRegister(QWidget *parent)
     ui->errorCheck->setVisible(false);
     ui->errorExisting->setVisible(false);
     ui->errorID->setVisible(false);
+
+    connect(ui->pushButtonRegister, &QPushButton::clicked, this, &doctorRegister::on_pushButtonRegister_clicked);
+
 }
 
 doctorRegister::~doctorRegister()
@@ -19,7 +22,8 @@ doctorRegister::~doctorRegister()
     delete ui;
 }
 
-void doctorRegister::on_pushButton_clicked()
+
+void doctorRegister::on_pushButtonRegister_clicked()
 {
     QString name = ui->nameEdit->text();
     QString id = ui->idEdit->text();
@@ -32,35 +36,27 @@ void doctorRegister::on_pushButton_clicked()
     QString from = ui->comboBoxFrom->currentText();
     QString to = ui->comboBoxTo->currentText();
 
-    QCheckBox *checkBoxes[] = {ui->checkBoxU, ui->checkBoxM, ui->checkBoxT, ui->checkBoxW, ui->checkBoxR};
-    QString days[] = {"U", "M", "T", "W", "R"};
 
 
-    char daysChar[] = {'U', 'M', 'T', 'W', 'R'};
-
-    for (int i = 0; i < 5; ++i) {
-        if (checkBoxes[i]->isChecked()) {
-            bool alreadyAdded = false;
-            for (int j = 0; j < 5; ++j) {
-                if (ourDoctors[doctorsCount].workingDays[j] == daysChar[i]) {
-                    alreadyAdded = true;
-                    break;
-                }
-            }
-            if (!alreadyAdded) {
-                for (int j = 0; j < 5; ++j) {
-                    if (ourDoctors[doctorsCount].workingDays[j] == '\0') {
-                        ourDoctors[doctorsCount].workingDays[j] = daysChar[i];
-                        break;
-                    }
-                }
-            }
-        }
+    if(ui->checkBoxU->isChecked()){
+        wD.push_back("U");
+    }
+    if(ui->checkBoxM->isChecked()){
+        wD.push_back("M");
+    }
+    if(ui->checkBoxT->isChecked()){
+        wD.push_back("T");
+    }
+    if(ui->checkBoxW->isChecked()){
+        wD.push_back("W");
+    }
+    if(ui->checkBoxR->isChecked()){
+        wD.push_back("R");
     }
 
     if(ui->radioButtonAM->isChecked()){
         wI = "AM";
-}
+    }
     else if(ui->radioButtonPM->isChecked()){
         wI = "PM";
     }
@@ -85,27 +81,30 @@ void doctorRegister::on_pushButton_clicked()
 
     for (int i = 0; i < doctorsCount; ++i) {
         if (ourDoctors[i].id == id) {
-    ui->errorExisting->setVisible(true);
+            ui->errorExisting->setVisible(true);
             hasError = true;
-    }
+        }
     }
     if(!hasError){
-    ourDoctors[doctorsCount].name = name;
-    ourDoctors[doctorsCount].id = id;
-    ourDoctors[doctorsCount].password = password;
-    ourDoctors[doctorsCount].specialization = specialization;
-    ourDoctors[doctorsCount].assistant = assistant;
-    ourDoctors[doctorsCount].workingHours =wI;
-    ourDoctors[doctorsCount].hoursFrom = from;
-    ourDoctors[doctorsCount].hoursTo = to;
+        ourDoctors[doctorsCount].name = name;
+        ourDoctors[doctorsCount].id = id;
+        ourDoctors[doctorsCount].password = password;
+        ourDoctors[doctorsCount].specialization = specialization;
+        ourDoctors[doctorsCount].assistant = assistant;
+        ourDoctors[doctorsCount].workingHours =wI;
+        ourDoctors[doctorsCount].hoursFrom = from;
+        ourDoctors[doctorsCount].hoursTo = to;
+        ourDoctors[doctorsCount].workingDays = wD;
 
 
-    doctorsCount++;
+
+        doctorsCount++;
 
 
-    loginWindow * loginwindow = new loginWindow(this);
-    loginwindow->show();
-    this->close();
+        loginWindow * loginwindow = new loginWindow(this);
+        loginwindow->show();
+        this->close();
     }
 }
+
 

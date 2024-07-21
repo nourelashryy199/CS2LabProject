@@ -45,11 +45,11 @@ void loginWindow::on_LoginpushButton_clicked()
         }
     }
     if (iD.left(2) == "01"){
-        for (int i = 0; i <doctorsCount;i++){
+        for (int i = 0; i < doctorsCount;i++){
             if(ourDoctors[i].id == iD && ourDoctors[i].password == pass){
                 hide();
-                DoctorMainWindow* doctorWindow = new DoctorMainWindow(this);
-                doctorWindow->show();
+                DoctorMainWindow* doctorMain = new DoctorMainWindow(this);
+                doctorMain->show();
             }
             else
                 ui->label_error->setVisible(true);

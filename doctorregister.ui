@@ -195,22 +195,6 @@ font-size:15px
     <string>Note: Please Make sure that the ID starts with 01</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>658</y>
-     <width>131</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 900 9pt &quot;Segoe UI Black&quot;;</string>
-   </property>
-   <property name="text">
-    <string>Register</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="errorCheck">
    <property name="geometry">
     <rect>
@@ -379,7 +363,7 @@ font-size:15px
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string/>
    </property>
    <widget class="QRadioButton" name="radioButtonAM">
     <property name="geometry">
@@ -436,7 +420,7 @@ font-size:15px
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string/>
    </property>
    <widget class="QCheckBox" name="checkBoxU">
     <property name="geometry">
@@ -532,7 +516,7 @@ font-size:15px
     </rect>
    </property>
    <property name="title">
-    <string>GroupBox</string>
+    <string/>
    </property>
    <widget class="QComboBox" name="comboBoxFrom">
     <property name="geometry">
@@ -820,6 +804,22 @@ font-size:15px
      </property>
     </item>
    </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButtonRegister">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>658</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 900 9pt &quot;Segoe UI Black&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Register</string>
+   </property>
   </widget>
  </widget>
  <resources/>
