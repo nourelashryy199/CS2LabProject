@@ -54,6 +54,7 @@ public:
         PasswordlineEdit = new QLineEdit(loginWindow);
         PasswordlineEdit->setObjectName("PasswordlineEdit");
         PasswordlineEdit->setGeometry(QRect(180, 130, 181, 41));
+        PasswordlineEdit->setEchoMode(QLineEdit::Password);
         LoginpushButton = new QPushButton(loginWindow);
         LoginpushButton->setObjectName("LoginpushButton");
         LoginpushButton->setGeometry(QRect(110, 240, 121, 71));

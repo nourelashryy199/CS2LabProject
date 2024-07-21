@@ -24,7 +24,6 @@ class Ui_admin
 public:
     QPushButton *pushButton;
     QLabel *label;
-    QLabel *label_2;
     QPushButton *pushButton_2;
     QGroupBox *groupBox;
     QRadioButton *radioButtonDoc;
@@ -42,9 +41,6 @@ public:
         label = new QLabel(admin);
         label->setObjectName("label");
         label->setGeometry(QRect(50, 20, 271, 41));
-        label_2 = new QLabel(admin);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(60, 120, 121, 31));
         pushButton_2 = new QPushButton(admin);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(480, 440, 93, 29));
@@ -71,9 +67,8 @@ public:
         admin->setWindowTitle(QCoreApplication::translate("admin", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("admin", "Search", nullptr));
         label->setText(QCoreApplication::translate("admin", "Welcome to your admin account", nullptr));
-        label_2->setText(QCoreApplication::translate("admin", "Search profiles:", nullptr));
         pushButton_2->setText(QCoreApplication::translate("admin", "Logout", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("admin", "GroupBox", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("admin", "Search profiles:", nullptr));
         radioButtonDoc->setText(QCoreApplication::translate("admin", "Doctor Account", nullptr));
         radioButtonNurse->setText(QCoreApplication::translate("admin", "Nurse Account", nullptr));
         radioButtonPatient->setText(QCoreApplication::translate("admin", "Patient Account", nullptr));
